@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Become a Driver or Get a Ride Now – Lyft</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,31 +16,47 @@
 <body>
     
     <header>
-        <nav>
-            <div class="row nav-row">
-                <i class="fab fa-lyft"></i>
-                <ul class="nav-list">
-                    <li><div class="search-input">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fab fa-lyft"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <div class="search-input">
                         <i class="fas fa-dot-circle"></i>
                         <input type="text" name="" id="" placeholder="Where are you going?">
                         <i class="fas fa-search"></i>
-                    </div></li>
-                    <li><a href="#">DRIVER</a></li>
-                    <li><a href="#">RIDER</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><i class="fas fa-user-circle"></i></li>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DRIVER</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">RIDER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fas fa-user-circle nav-link"></i>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
+        
         <div class="header-register">
             <div class="row">
-                <div class="col span-1-of-2">
+                <div class="col-lg-6">
                     <p class="title-p">READY WHEN YOU ARE</p>
                     <h1>Wherever you're headed, let's get there together.</h1>
-                    <button class="btn-filled">Sign up to ride</button>
-                    <Button class="btn-white">Apply to drive</Button>
+                    <button class="btn-header btn-filled">Sign up to ride</button>
+                    <button class="btn-header btn-white">Apply to drive</button>
                 </div>
-                <dvi class="col span-1-of-2 header-images">
+                <dvi class="col-lg-6 header-images">
                     <img class="header-image-woman" src="./images/Woman_wearing_a_mask_.jpg" alt="">
                     <img class="header-image-man" src="./images/Driver_wearing_a_mask_in_the_car.jpg" alt="">
                 </dvi>
@@ -51,7 +67,7 @@
     <section class="latest-update">
         <p class="title-p">LATEST UPDATES</p>
         <div class="row">
-            <div class="col span-1-of-2">
+            <div class="col-lg-6">
                 <div class="update-box">
                     <div class="update-img">
                         <img src="./images/Rentals_illustration.png" alt="">
@@ -63,7 +79,7 @@
                     </div>
                 </div>      
             </div>
-            <div class="col span-1-of-2">
+            <div class="col-lg-6">
                 <div class="update-box">
                     <div class="update-img">
                         <img src="./images/Health_Safety_illustration.jpg" alt="">
@@ -80,7 +96,7 @@
 
     <footer>
         <div class="row footer-row">
-            <div class="col span-1-of-4">
+            <div class="col-md-3">
                 <p class="title-p">DRIVER</p>
                 <a class="footer-link" href="#">Become a Driver</a>
                 <a class="footer-link" href="#">Cities</a>
@@ -95,7 +111,7 @@
                 <a class="footer-link" href="#">Jobs</a>
                 <a class="footer-link" href="#">Hub</a>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col-md-3">
                 <p class="title-p">RIDER</p>
                 <a class="footer-link" href="#">Get a Ride</a>
                 <a class="footer-link" href="#">Business Profile</a>
@@ -110,7 +126,7 @@
                 <a class="footer-link" href="#">Donate</a>
                 <a class="footer-link" href="#">Blog</a>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col-md-3">
                 <p class="title-p">LYFT</p>
                 <a class="footer-link" href="#">LyftUp</a>
                 <a class="footer-link" href="#">Careers</a>
@@ -123,7 +139,7 @@
                 <a class="footer-link" href="#">Press</a>
                 <a class="footer-link" href="#">Investor Relations</a>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col-md-3">
                 <Button class="btn-white btn-footer">Lyft driver app</Button>
                 <Button class="btn-white btn-footer">Lyft rider app</Button>
                 <Button class="btn-white btn-footer">Ride on web</Button>
@@ -141,6 +157,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
 </body>
 </html>
